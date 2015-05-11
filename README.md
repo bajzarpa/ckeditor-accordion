@@ -9,13 +9,6 @@ Copy the accordion folder into your CKEDTIOR plugins folder then activate in the
 
     config.extraPlugins = 'accordion';
 
-### Javascript
-You must insert the following code into your javascript, to handle the open-close events
-
-    $(document).on('click', '.collapse-panel h6', function() {
-      $(this).parent().toggleClass('active');
-      return false;
-    });
 
 ### Settings for the CSS
 This plugin is css driven mostly, so you need to apply a basic setup for the accordion
@@ -42,6 +35,16 @@ This plugin is css driven mostly, so you need to apply a basic setup for the acc
 
     .collapse-panel.active .panel-content {
       max-height: 1000px;
+    }
+
+CSS for just hide/show effect
+
+    .collapse-panel .panel-content {
+        display: none;
+    }
+    
+    .collapse-panel.active .panel-content {
+        display: block;
     }
 
 ### Notes
