@@ -2,7 +2,7 @@
 ## Simple accordion plugin for CKEDITOR
 
 This plugins creates only the logic of the plugin; you have to apply the styling for your self,
-trust me, it's not a rocket science...
+trust me, it's not a rocket science... 
 
 ### Usage
 Copy the accordion folder into your CKEDTIOR plugins folder then activate in the config file
