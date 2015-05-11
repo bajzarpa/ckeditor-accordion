@@ -10,7 +10,7 @@ Copy the accordion folder into your CKEDTIOR plugins folder then activate in the
     config.extraPlugins = 'accordion';
 
 ### Javascript
-You must insert the following code into your javascript, to handle the open-close methods
+You must insert the following code into your javascript, to handle the open-close events
 
     $(document).on('click', '.collapse-panel h6', function() {
       $(this).parent().toggleClass('active');
@@ -18,7 +18,7 @@ You must insert the following code into your javascript, to handle the open-clos
     });
 
 ### Settings for the CSS
-This plug in is css driven mostly, so you need to apply a basic setup for the accordion
+This plugin is css driven mostly, so you need to apply a basic setup for the accordion
 
     .collapse-panel {
       display: block;
@@ -45,5 +45,5 @@ This plug in is css driven mostly, so you need to apply a basic setup for the ac
     }
 
 ### Notes
-- I created a CKEDITOR project for very first time, so i know, it can be better. :-)
+- I created a CKEDITOR plugin for a very first time, so i know, it can be better. :-)
 - The plugin also has an option for dark scheme, if you can choose that, the root element will got a "dark" class, then you can apply your css to that.
