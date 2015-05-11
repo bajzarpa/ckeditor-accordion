@@ -1,6 +1,9 @@
 # CKEDTIOR Accordion
 ## Simple accordion plugin for CKEDITOR
 
+This plugins creates only the logic of the plugin; you have to apply the styling for your self,
+trust me, it's not a rocket science... 
+
 ### Usage
 Copy the accordion folder into your CKEDTIOR plugins folder then activate in the config file
 
@@ -40,3 +43,7 @@ This plug in is css driven mostly, so you need to apply a basic setup for the ac
     .collapse-panel.active .panel-content {
       max-height: 1000px;
     }
+
+### Notes
+- I created a CKEDITOR project for very first time, so i know, it can be better. :-)
+- The plugin also has an option for dark scheme, if you can choose that, the root element will got a "dark" class, then you can apply your css to that.
