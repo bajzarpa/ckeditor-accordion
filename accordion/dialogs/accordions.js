@@ -24,7 +24,7 @@ CKEDITOR.dialog.add('accordion', function(editor) {
     onOk: function() {
       var dialog    = this,
           sections  = parseInt(dialog.getValueOf('accordion-setting', 'number')),
-          thisPath  = CKEDITOR.plugins.getPath('intrenAccordion'),
+          thisPath  = CKEDITOR.plugins.getPath('accordion'),
           tone      = dialog.getValueOf('accordion-setting', 'dark') === true ? 'dark' : 'normal',
           merger, section;
 
