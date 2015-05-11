@@ -18,7 +18,7 @@ You must insert the following code into your javascript, to handle the open-clos
     });
 
 ### Settings for the CSS
-This plug in is css driven mostly, so you need to apply a basic setup for the accordion
+This plugin is css driven mostly, so you need to apply a basic setup for the accordion
 
     .collapse-panel {
       display: block;
