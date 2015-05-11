@@ -3,10 +3,12 @@
 
 ### Usage
 Copy the accordion folder into your CKEDTIOR plugins folder then activate in the config file
+
     config.extraPlugins = 'accordion';
 
 ### Javascript
 You must insert the following code into your javascript, to handle the open-close methods
+
     $(document).on('click', '.collapse-panel h6', function() {
       $(this).parent().toggleClass('active');
       return false;
