@@ -23,8 +23,8 @@ CKEDITOR.dialog.add('accordion', function(editor) {
     ],
     onOk: function() {
       var dialog    = this,
-          script    = "",
           sections  = parseInt(dialog.getValueOf('accordion-setting', 'number')),
+          thisPath  = CKEDITOR.plugins.getPath('intrenAccordion'),
           tone      = dialog.getValueOf('accordion-setting', 'dark') === true ? 'dark' : 'normal',
           merger, section;
 
@@ -37,9 +37,8 @@ CKEDITOR.dialog.add('accordion', function(editor) {
         merger = merger + section;
       }
 
-      script = "<script>document.addEventListener('DOMContentLoaded', function() {document.querySelector('body').addEventListener('click', function(event) {if (event.target.className === 'toggle-panel') {event.target.parentNode.parentNode.classList.toggle('active');}});});</script>";
-
-      editor.insertHtml(merger+script);
+      CKEDITOR.scriptLoader.load( thisPath + 'eventhandler/eventhandler.js' );
+      editor.insertHtml(merger);
     }
   }
 });
