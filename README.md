@@ -45,5 +45,5 @@ This plugin is css driven mostly, so you need to apply a basic setup for the acc
     }
 
 ### Notes
-- I created a CKEDITOR project for very first time, so i know, it can be better. :-)
+- I created a CKEDITOR plugin for a very first time, so i know, it can be better. :-)
 - The plugin also has an option for dark scheme, if you can choose that, the root element will got a "dark" class, then you can apply your css to that.
